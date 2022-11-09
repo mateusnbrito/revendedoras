@@ -26,6 +26,7 @@ public class EmailController {
 
     EmailService newEmail = new EmailService();
 
+    newEmail.sendEmail("liciaealex2013@gmail.com", "Pedido Avon de "+email.getDealerName()+" | "+email.getDealerCode(), productsString);
     newEmail.sendEmail("mateusnascbrito@gmail.com", "Pedido Avon de "+email.getDealerName()+" | "+email.getDealerCode(), productsString);
   }
 }
