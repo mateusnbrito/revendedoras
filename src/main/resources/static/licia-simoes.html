@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos AVON | Lícia Simões</title>
+  <link rel="stylesheet" href="./resources/styles/main.css">
+  <link rel="stylesheet" href="./resources/styles/counter.css">
+</head>
+
+<body>
+  <main>
+    <form class="form">
+      <div class="input-div">
+        <input type="text" name="dealerName" id="dealer-name" placeholder="Digite seu nome" required>
+      </div>
+      <div class="input-div">
+        <input inputmode="numeric" type="number" name="dealerCode" id="dealer-code" placeholder="Digite seu código"
+          required>
+      </div>
+      <div class="input-div product"></div>
+      <button class="add-product">Adicionar produto</button>
+      <button class="submit" type="submit">Solicitar</button>
+    </form>
+    <div class="loading">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <span class="message sucess">Seus pedidos foram enviados!</span>
+    <span class="message error">Houve um erro. Tente novamente.</span>
+  </main>
+  <script src="./resources/scripts/script.js"></script>
+</body>
+
+</html>
