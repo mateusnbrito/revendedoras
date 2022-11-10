@@ -37,7 +37,7 @@ function updateButton(selector1, selector2) {
 }
 
 function addProduct() {
-  $qtyWrapper.insertAdjacentHTML("beforeend", `<div class="input-wrapper"><input inputmode="numeric" type="number" name="code" id="product-code" placeholder="Digite o código do produto" required><div class="qty-wrapper"><button class="button plus" value="plus" data-position="${productsQty}">+</button><input class="qty" inputmode="numeric" type="number" name="qty" value="1" id="product-qty" data-position="${productsQty}"><button class="button minus" value="minus" data-position="${productsQty}">-</button></div></div>`);
+  $qtyWrapper.insertAdjacentHTML("beforeend", `<div class="input-wrapper"><input inputmode="numeric" type="number" name="code" id="product-code" placeholder="Código do produto" required><div class="qty-wrapper"><button class="button plus" value="plus" data-position="${productsQty}">+</button><input class="qty" inputmode="numeric" type="number" name="qty" value="1" id="product-qty" data-position="${productsQty}"><button class="button minus" value="minus" data-position="${productsQty}">-</button></div></div>`);
 
   updateButton(`button.plus[data-position="${productsQty}"]`, `button.minus[data-position="${productsQty}"]`);
 
