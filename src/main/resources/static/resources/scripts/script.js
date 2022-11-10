@@ -1,4 +1,5 @@
 let $form = document.querySelector(".form");
+let $imgWrapper = document.querySelector(".img-wrapper");
 let $qty = document.querySelectorAll(".qty");
 let $qtyWrapper = document.querySelector(".input-div.product");
 let $addProduct = document.querySelector(".add-product");
@@ -56,6 +57,7 @@ $form.addEventListener("submit", event => {
   event.preventDefault();
 
   $form.style.display = "none";
+  $imgWrapper.style.display = "none";
   $loading.style.display = "block";
 
   let $inputs = (event.target).querySelectorAll("input");
@@ -72,6 +74,7 @@ $form.addEventListener("submit", event => {
   let request = {
     "dealerName": $inputs[0].value,
     "dealerCode": $inputs[1].value,
+    "email": dealerEmail,
     "products": products
   }
 
