@@ -86,7 +86,7 @@ $form.addEventListener("submit", event => {
     "body": JSON.stringify(request)
   };
 
-  fetch("https://revendedoras.up.railway.app/pedido/enviar", options)
+  fetch("https://revendedoras-avon.up.railway.app/pedido/enviar", options)
     .then(response => {
       $loading.style.display = "none";
 
