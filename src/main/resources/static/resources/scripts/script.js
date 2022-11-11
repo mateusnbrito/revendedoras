@@ -64,7 +64,7 @@ $form.addEventListener("submit", event => {
 
   let products = [];
 
-  for (let index = 2; index < $inputs.length; index += 2) {
+  for (let index = 1; index < $inputs.length; index += 2) {
     products.push({
       "code": $inputs[index].value,
       "qty": $inputs[index + 1].value
@@ -72,8 +72,7 @@ $form.addEventListener("submit", event => {
   }
 
   let request = {
-    "dealerName": $inputs[0].value,
-    "dealerCode": $inputs[1].value,
+    "dealerCode": $inputs[0].value,
     "email": dealerEmail,
     "products": products
   }
@@ -86,6 +85,7 @@ $form.addEventListener("submit", event => {
     "body": JSON.stringify(request)
   };
 
+  // fetch("http://localhost:2412/pedido/enviar", options)
   fetch("https://revendedoras-avon.up.railway.app/pedido/enviar", options)
     .then(response => {
       $loading.style.display = "none";

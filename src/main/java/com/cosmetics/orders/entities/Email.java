@@ -14,7 +14,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Email {
-  private String dealerName;
   private Integer dealerCode;
   private String email;
   private List<Product> products;
