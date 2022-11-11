@@ -25,7 +25,7 @@ body {
 }
 
 .logo-img {
-  width: 20rem;
+  width: 18rem;
   margin: 0rem 0rem 0.5rem 0rem;
 }
 
@@ -181,5 +181,12 @@ main .form .submit {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 374px){
+  input {
+    width: 10rem;
+    font-size: 0.75rem;
   }
 }
